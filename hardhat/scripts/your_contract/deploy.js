@@ -27,6 +27,7 @@ const main = async () => {
   console.log("\n\n 📡 Deploying...\n");
 
   const yourContract = await deploy("YourContract"); // <-- add in constructor args like line 19 vvvv
+
   // use for local token bridging
   // const mockToken = await deploy("MockERC20") // <-- add in constructor args like line 19 vvvv
 
@@ -110,6 +111,7 @@ const deploy = async (
   );
   console.log(" ⛽", chalk.grey(extraGasInfo));
 
+  /***
   await tenderly.persistArtifacts({
     name: contractName,
     address: deployed.address,
@@ -117,7 +119,7 @@ const deploy = async (
 
   if (!encoded || encoded.length <= 2) return deployed;
   fs.writeFileSync(`artifacts/${contractName}.args`, encoded.slice(2));
-
+  ***/
   return deployed;
 };
 

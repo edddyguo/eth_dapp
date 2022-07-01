@@ -74,21 +74,29 @@ module.exports = {
       */
     },
     rinkeby: {
-      url: "https://rinkeby.infura.io/v3/460f40a260564ac4a4f4b3fffb032dad", // <---- YOUR INFURA ID! (or it won't work)
+      url: "https://rinkeby.infura.io/v3/624b915fd9dd414b9b4b6ca3038a6c9e", // <---- YOUR INFURA ID! (or it won't work)
       //    url: "https://speedy-nodes-nyc.moralis.io/XXXXXXXXXXXXXXXXXXXXXXX/eth/rinkeby", // <---- YOUR MORALIS ID! (not limited to infura)
-      accounts: {
-        mnemonic: mnemonic(),
-      },
+      accounts: [
+        // 0x613548d151E096131ece320542d19893C4B8c901 chemix-test1
+        '0xa26660eb5dfaa144ae6da222068de3a865ffe33999604d45bd0167ff1f4e2882',
+        //'0x1f3bc7d273c179f0b73745d0599a15ece081837a9aa4ccb6351842fcad19fb95',
+        // 0x37BA121cdE7a0e24e483364185E80ceF655346DD chemix-test2
+        '0xb89da4744ef5efd626df7c557b32f139cdf42414056447bba627d0de76e84c43',
+        // 0xca9B361934fc7A7b07814D34423d665268111726 chemix-test3
+        '0xb0a09e85dad814ccc7231982401cca5accc3a46bc68349b403a7a129517cc266',
+        //0xF668b864756a2fB53b679bb13e0F9AB2d9C5fEE0  chemix-test4
+        '3bf8a9797398ee2dcdd550bad07b73c41a9af7c94be3aa97cdebde8c0efef00b'
+      ],
     },
     kovan: {
-      url: "https://kovan.infura.io/v3/460f40a260564ac4a4f4b3fffb032dad", // <---- YOUR INFURA ID! (or it won't work)
+      url: "https://kovan.infura.io/v3/624b915fd9dd414b9b4b6ca3038a6c9e", // <---- YOUR INFURA ID! (or it won't work)
       //    url: "https://speedy-nodes-nyc.moralis.io/XXXXXXXXXXXXXXXXXXXXXXX/eth/kovan", // <---- YOUR MORALIS ID! (not limited to infura)
       accounts: {
         mnemonic: mnemonic(),
       },
     },
     mainnet: {
-      url: "https://mainnet.infura.io/v3/460f40a260564ac4a4f4b3fffb032dad", // <---- YOUR INFURA ID! (or it won't work)
+      url: "https://mainnet.infura.io/v3/624b915fd9dd414b9b4b6ca3038a6c9e", // <---- YOUR INFURA ID! (or it won't work)
       //      url: "https://speedy-nodes-nyc.moralis.io/XXXXXXXXXXXXXXXXXXXXXXXXX/eth/mainnet", // <---- YOUR MORALIS ID! (not limited to infura)
       gasPrice: mainnetGwei * 1000000000,
       accounts: {
@@ -96,14 +104,14 @@ module.exports = {
       },
     },
     ropsten: {
-      url: "https://ropsten.infura.io/v3/460f40a260564ac4a4f4b3fffb032dad", // <---- YOUR INFURA ID! (or it won't work)
+      url: "https://ropsten.infura.io/v3/624b915fd9dd414b9b4b6ca3038a6c9e", // <---- YOUR INFURA ID! (or it won't work)
       //      url: "https://speedy-nodes-nyc.moralis.io/XXXXXXXXXXXXXXXXXXXXXXXXX/eth/ropsten",// <---- YOUR MORALIS ID! (not limited to infura)
       accounts: {
         mnemonic: mnemonic(),
       },
     },
     goerli: {
-      url: "https://goerli.infura.io/v3/460f40a260564ac4a4f4b3fffb032dad", // <---- YOUR INFURA ID! (or it won't work)
+      url: "https://goerli.infura.io/v3/624b915fd9dd414b9b4b6ca3038a6c9e", // <---- YOUR INFURA ID! (or it won't work)
       //      url: "https://speedy-nodes-nyc.moralis.io/XXXXXXXXXXXXXXXXXXXXXXXXX/eth/goerli", // <---- YOUR MORALIS ID! (not limited to infura)
       accounts: {
         mnemonic: mnemonic(),

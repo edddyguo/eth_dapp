@@ -13,4 +13,5 @@ npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
 npx run run.js --network tbsc
+npx hardhat run scripts/simple_nft/mint.js --network rinkeby
 ```
