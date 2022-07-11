@@ -22,7 +22,7 @@ contract Staker {
     uint256 public constant threshold = 1 ether;
 
     // Staking deadline
-    uint256 public deadline = block.timestamp + 3000 seconds;
+    uint256 public deadline = block.timestamp + 600 seconds;
 
     // Contract's Events
     event Stake(address indexed sender, uint256 amount);
@@ -115,9 +115,9 @@ contract Staker {
         }
     }
 
-    function reset(uint256 roundTime) public returns (uint256 nextDeadline) {
-        require(msg.sender == owner,"Must reset by owner");
-        nextDeadline = block.timestamp + roundTime * 1 seconds;
+    function reset(uint256 roundTime) public returns (uint256 deadline) {
+        //require(msg.sender == owner,"Must reset by owner");
+        deadline = block.timestamp + roundTime * 1 seconds;
     }
 
 }
